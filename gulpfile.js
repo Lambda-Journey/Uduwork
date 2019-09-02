@@ -12,9 +12,9 @@ const styleDIST = './dist/css/';
 const styleWatch = './src/styles/**/*.scss';
 
 //HTML compiling & watch
-const htmlMinifySRC = './src/html/index.html';
-const htmlMinifyDIST = './';
-const htmlMinifyWatch = './src/html/index.html';
+const htmlMinifySRC = './index.html';
+const htmlMinifyDIST = './dist/html/';
+const htmlMinifyWatch = './index.html';
 
 
 
