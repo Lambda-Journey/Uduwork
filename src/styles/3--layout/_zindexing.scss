@@ -1,0 +1,15 @@
+.section-a {
+    z-index: -100;
+
+    &__clickpack {
+        z-index: -1;
+    }
+
+    header {
+        z-index: 9000;
+    }
+}
+
+#zindex-svg {
+    z-index: -1;
+}

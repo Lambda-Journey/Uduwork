@@ -53,6 +53,7 @@ gulp.task('css', function (done) {
 });
 
 
+
 gulp.task('htmlMinify', function (done) {
     gulp.src(htmlMinifySRC)
         .pipe(htmlmin({
@@ -64,6 +65,7 @@ gulp.task('htmlMinify', function (done) {
         .pipe(gulp.dest(htmlMinifyDIST))
     done();
 })
+
 
 
 gulp.task('default', function () {

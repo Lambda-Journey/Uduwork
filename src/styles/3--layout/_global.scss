@@ -1,0 +1,16 @@
+/* global layout
+*************/
+
+.section-a {
+    position: relative;
+    background-image: url(../../../assets/brushes.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+
+    &__clickpath {
+        position: absolute;
+    }
+
+}
