@@ -2,4 +2,5 @@
 *************/
 $colors: (primary: #17222a,
     primary-light: lighten(#17222a, 5%),
-    accent: #3cf28b);
+    accent: #3cf28b,
+    accent-darken: (#3cf28b, 50%));

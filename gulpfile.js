@@ -70,5 +70,6 @@ gulp.task('htmlMinify', function (done) {
 
 gulp.task('default', function () {
     gulp.watch(styleWatch, gulp.series('cssMinify'));
+    gulp.watch(styleWatch, gulp.series('css'));
     gulp.watch(htmlMinifyWatch, gulp.series('htmlMinify'));
 });

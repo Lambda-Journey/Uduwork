@@ -1,15 +1,13 @@
+/* z-indexing
+*************/
+
 .section-a {
-    z-index: -100;
-
-    &__clickpack {
-        z-index: -1;
+    &__clickpath {
+        z-index: 0;
     }
 
-    header {
-        z-index: 9000;
+    &__header {
+        position: relative;
+        z-index: 1;
     }
-}
-
-#zindex-svg {
-    z-index: -1;
 }

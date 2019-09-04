@@ -11,6 +11,20 @@
 
     &__clickpath {
         position: absolute;
+        height: 100vh;
+    }
+
+    .textContainer h1 {
+        position: absolute;
+        background-color: color(primary);
+        width: auto;
+        height: auto;
+        top: 30%;
+        left: 15%;
+        font-weight: 400;
+        font-size: 4rem;
+        padding: 2rem 1em;
+        color: white;
     }
 
 }

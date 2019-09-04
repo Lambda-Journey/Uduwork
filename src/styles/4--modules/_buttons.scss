@@ -1,2 +1,40 @@
 /* buttons
 *************/
+
+.btn {
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    box-sizing: border-box;
+}
+
+.btn--primary {
+    background-color: color(accent);
+    border: none;
+    cursor: pointer;
+    transition: all 800ms ease;
+    transform-origin: left;
+
+    &:hover,
+    &:focus {
+        background-color: color(primary);
+        border: 5px solid color(accent);
+        color: color(accent);
+        transition: all 500ms ease;
+    }
+}
+
+.btn--secondary {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 800ms ease;
+    transform-origin: left;
+
+    &:hover,
+    &:focus {
+        background-color: rgba(0, 0, 0, 0);
+        border: 1.5px solid white;
+        color: white;
+        transition: all 500ms ease;
+    }
+}
