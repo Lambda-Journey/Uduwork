@@ -160,30 +160,20 @@ template {
 *************/
 body {
   font-family: "Montserrat", sans-serif; }
-  body li,
-  body a,
-  body button {
-    font-size: 0.85rem; }
-  body h1 {
-    color: black; }
-
-/* global base
-*************/
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
 
 li,
 a,
 button {
-  text-decoration: none; }
+  font-size: 0.75rem; }
+
+h1 {
+  color: black; }
 
 /* header
 *************/
 header {
   width: 90%;
+  max-width: 2000px;
   margin: 0 auto;
   padding: 1.2em 1.5em;
   display: -webkit-box;
@@ -195,7 +185,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #17222a; }
+  background-color: black; }
   header .logo {
     width: 120px;
     cursor: pointer;
@@ -208,18 +198,45 @@ header {
     padding: 0px 10px; }
   .nav__links li:nth-child(2) {
     margin-right: 10px; }
-
-.nav__links li a {
-  color: white;
-  -webkit-transition: all 300ms ease 0s;
-  transition: all 300ms ease 0s; }
-
-.nav__links li a:hover,
-.nav__links li a:focus {
-  color: #3cf28b; }
+  .nav__links li a {
+    color: white;
+    -webkit-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s; }
+  .nav__links li a:hover,
+  .nav__links li a:focus {
+    color: #3cf28b; }
 
 /* body
 *************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #F8FCFF; }
+
+li,
+a,
+button {
+  text-decoration: none; }
+
+.section-a {
+  background-image: url(../../../assets/brushes.jpg);
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .section-a .textContainer h1 {
+    background-color: black;
+    font-weight: 400;
+    font-size: 4rem;
+    padding: 2rem 0.8em;
+    color: white;
+    -webkit-box-shadow: -25px 25px #3cf28b;
+    box-shadow: -25px 25px #3cf28b; }
+
 /* sidebar
 *************/
 /* footer
@@ -233,33 +250,36 @@ header {
   position: relative;
   z-index: 1; }
 
-/* flex
-*************/
-/* grid
-*************/
 /* global layout
 *************/
 .section-a {
   position: relative;
-  background-image: url(../../../assets/brushes.jpg);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100vh; }
+  height: 1000px; }
   .section-a__clickpath {
     position: absolute;
-    height: 100vh; }
+    height: 1000px;
+    left: auto; }
   .section-a .textContainer h1 {
     position: absolute;
-    background-color: #17222a;
     width: auto;
+    margin: 0 5%;
     height: auto;
     top: 30%;
-    left: 15%;
-    font-weight: 400;
-    font-size: 4rem;
-    padding: 2rem 1em;
-    color: white; }
+    left: 15%; }
+
+/* media queries
+*************/
+@media only screen and (max-width: 1200px) {
+  .section-a__clickpath {
+    left: -200px; }
+  .section-a .textContainer h1 {
+    top: 25%; } }
+
+@media only screen and (max-width: 900px) {
+  .section-a__clickpath {
+    left: -300px; }
+  .section-a .textContainer h1 {
+    top: 25%; } }
 
 /* buttons
 *************/
@@ -267,37 +287,36 @@ header {
   padding: 0.5em 1em;
   margin: 0 0.5em;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  height: 30px; }
 
 .btn--primary {
   background-color: #3cf28b;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: all 800ms ease;
-  transition: all 800ms ease;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
   -webkit-transform-origin: left;
   transform-origin: left; }
   .btn--primary:hover, .btn--primary:focus {
-    background-color: #17222a;
-    border: 5px solid #3cf28b;
-    color: #3cf28b;
-    -webkit-transition: all 500ms ease;
-    transition: all 500ms ease; }
+    opacity: 70%;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease; }
 
 .btn--secondary {
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: all 800ms ease;
-  transition: all 800ms ease;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
   -webkit-transform-origin: left;
-  transform-origin: left; }
+  transform-origin: left;
+  width: 80px; }
   .btn--secondary:hover, .btn--secondary:focus {
-    background-color: rgba(0, 0, 0, 0);
-    border: 1.5px solid white;
-    color: white;
-    -webkit-transition: all 500ms ease;
-    transition: all 500ms ease; }
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    opacity: 50%; }
 
 /* forms
 *************/

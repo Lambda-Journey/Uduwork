@@ -1,6 +1,7 @@
 /* variables
 *************/
-$colors: (primary: #17222a,
+$colors: (primary: black,
     primary-light: lighten(#17222a, 5%),
     accent: #3cf28b,
-    accent-darken: (#3cf28b, 50%));
+    accent-light: lighten(#3cf28b, 10%),
+    bg: #F8FCFF);

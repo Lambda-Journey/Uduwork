@@ -3,28 +3,22 @@
 
 .section-a {
     position: relative;
-    background-image: url(../../../assets/brushes.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
+    height: 1000px;
+
 
     &__clickpath {
         position: absolute;
-        height: 100vh;
+        height: 1000px;
+        left: auto;
     }
 
     .textContainer h1 {
         position: absolute;
-        background-color: color(primary);
         width: auto;
+        margin: 0 5%;
         height: auto;
         top: 30%;
         left: 15%;
-        font-weight: 400;
-        font-size: 4rem;
-        padding: 2rem 1em;
-        color: white;
     }
 
 }

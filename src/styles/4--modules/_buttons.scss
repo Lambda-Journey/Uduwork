@@ -5,36 +5,35 @@
     padding: 0.5em 1em;
     margin: 0 0.5em;
     box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
 }
 
 .btn--primary {
     background-color: color(accent);
-    border: none;
-    cursor: pointer;
-    transition: all 800ms ease;
+    transition: all 300ms ease;
     transform-origin: left;
 
     &:hover,
     &:focus {
-        background-color: color(primary);
-        border: 5px solid color(accent);
-        color: color(accent);
-        transition: all 500ms ease;
+        opacity: 70%;
+        transition: all 300ms ease;
     }
 }
 
 .btn--secondary {
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    transition: all 800ms ease;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    color: white;
+    transition: all 300ms ease;
     transform-origin: left;
+    width: 80px;
 
     &:hover,
     &:focus {
-        background-color: rgba(0, 0, 0, 0);
-        border: 1.5px solid white;
-        color: white;
-        transition: all 500ms ease;
+        transition: all 300ms ease;
+        opacity: 50%;
     }
 }
