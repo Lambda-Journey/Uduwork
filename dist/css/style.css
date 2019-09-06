@@ -185,8 +185,6 @@ h1 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: fixed;
-  top: 0;
   background-color: black; }
   .section-a__header .logo {
     width: 120px;
@@ -246,7 +244,7 @@ button {
 /* z-indexing
 *************/
 .section-a__clickpath {
-  z-index: 0; }
+  z-index: 999; }
 
 .section-a__header {
   position: relative;
@@ -257,10 +255,11 @@ button {
 .section-a {
   position: relative;
   height: 1000px; }
-  .section-a__clickpath {
+  .section-a__diagonal {
     position: absolute;
     height: 1000px;
-    left: auto; }
+    width: 100%;
+    background-image: linear-gradient(70deg, #F8FCFF 45%, rgba(0, 0, 0, 0) 45%); }
   .section-a .textContainer h1 {
     position: absolute;
     width: auto;
