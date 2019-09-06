@@ -171,7 +171,7 @@ h1 {
 
 /* header
 *************/
-header {
+.section-a__header {
   width: 90%;
   max-width: 2000px;
   margin: 0 auto;
@@ -185,8 +185,10 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: fixed;
+  top: 0;
   background-color: black; }
-  header .logo {
+  .section-a__header .logo {
     width: 120px;
     cursor: pointer;
     margin-right: auto; }
@@ -266,6 +268,12 @@ button {
     height: auto;
     top: 30%;
     left: 15%; }
+  .section-a #header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
 
 /* media queries
 *************/

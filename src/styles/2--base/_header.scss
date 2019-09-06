@@ -1,7 +1,7 @@
 /* header
 *************/
 
-header {
+.section-a__header {
 
     width: 90%;
     max-width: 2000px;
@@ -10,7 +10,10 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    top: 0;
     background-color: color(primary);
+
 
     .logo {
         width: 120px;
