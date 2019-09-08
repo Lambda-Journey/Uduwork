@@ -4,7 +4,7 @@
 @media only screen and (max-width:1110px) {
     .section-a {
         &__header {
-            padding: 2em 5%;
+            padding: 2em 5% !important;
             background-color: rgba(0, 0, 0, 0.8);
 
             .logo {
