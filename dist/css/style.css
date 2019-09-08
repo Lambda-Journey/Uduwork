@@ -199,11 +199,11 @@ template {
 @media only screen and (max-width: 1110px) {
   .section-a__header {
     padding: 2em 5% !important;
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(0, 0, 0, 0.9); }
     .section-a__header .logo {
       width: 180px; }
     .section-a__header .nav__links {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.9);
       position: absolute;
       right: 0px;
       width: 100%;
