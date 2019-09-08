@@ -288,7 +288,9 @@ strong {
     width: 42px;
     background-color: white;
     margin: 10px;
-    border-radius: 5px; }
+    border-radius: 10px;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease; }
 
 .nav__links {
   list-style: none; }
@@ -332,6 +334,17 @@ strong {
     opacity: 1;
     -webkit-transform: translateX(0x);
     transform: translateX(0x); } }
+
+.close .burger__line0 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 10px);
+  transform: rotate(-45deg) translate(-7px, 10px); }
+
+.close .burger__line1 {
+  opacity: 0; }
+
+.close .burger__line2 {
+  -webkit-transform: rotate(45deg) translate(-7px, -11px);
+  transform: rotate(45deg) translate(-7px, -11px); }
 
 /* body
 *************/

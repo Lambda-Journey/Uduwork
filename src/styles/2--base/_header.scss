@@ -13,17 +13,11 @@
     padding: 1.5em 10%;
     height: 8vh;
 
-
-
-
     .logo {
         width: 180px;
         cursor: pointer;
 
     }
-
-
-
 
 }
 
@@ -37,7 +31,8 @@
         width: 42px;
         background-color: white;
         margin: 10px;
-        border-radius: 5px;
+        border-radius: 10px;
+        transition: all 300ms ease;
     }
 
 }
@@ -82,4 +77,16 @@
         transform: translateX(0x);
 
     }
+}
+
+.close .burger__line0 {
+    transform: rotate(-45deg) translate(-7px, 10px);
+}
+
+.close .burger__line1 {
+    opacity: 0;
+}
+
+.close .burger__line2 {
+    transform: rotate(45deg) translate(-7px, -11px);
 }

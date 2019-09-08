@@ -15,6 +15,7 @@ const navSlide = () => {
                 link.style.animation = `navLinkFade 500ms ease forwards ${index / 7 + 0.6}s`;
             }
         });
+        burger.classList.toggle('close');
     });
 }
 
