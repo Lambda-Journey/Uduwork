@@ -1,13 +1,6 @@
 /* z-indexing
 *************/
 
-.section-a {
-    &__clickpath {
-        z-index: 999;
-    }
-
-    &__header {
-        position: relative;
-        z-index: 1;
-    }
+.section-a__header {
+    z-index: 9000;
 }

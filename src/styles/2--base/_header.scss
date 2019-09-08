@@ -3,21 +3,43 @@
 
 .section-a__header {
 
-    width: 90%;
-    max-width: 2000px;
-    margin: 0 auto;
-    padding: 1.2em 1.5em;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    background-color: color(primary);
+    // border: 3px red solid;
+    letter-spacing: 0.22em;
+    font-size: 1rem;
+    padding: 1.5em 10%;
+    height: 8vh;
+
+
 
 
     .logo {
-        width: 120px;
+        width: 180px;
         cursor: pointer;
-        margin-right: auto;
+
     }
+
+
+
+
+}
+
+.burger {
+
+    display: none;
+    cursor: pointer;
+
+    div {
+        height: 3px;
+        width: 42px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
 }
 
 .nav__links {
@@ -40,5 +62,24 @@
     li a:hover,
     li a:focus {
         color: color(accent);
+    }
+}
+
+.nav--active {
+    transform: translateX(0%) !important;
+    transition: transform 500ms ease;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0x);
+
     }
 }

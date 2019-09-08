@@ -7,20 +7,39 @@
     box-sizing: border-box;
     border: none;
     cursor: pointer;
-    width: 120px;
-    height: 30px;
+    position: relative;
+    z-index: 1;
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 250ms ease;
+    }
+
+    &:hover::after,
+    &:focus::after {
+        transform: scaleX(1);
+
+    }
 }
 
 .btn--primary {
     background-color: color(accent);
-    transition: all 300ms ease;
-    transform-origin: left;
+    font-size: 1.5vw;
+    font-weight: 300;
+    max-width: 17vw;
+    letter-spacing: 0.22em;
+    // color: white;
 
-    &:hover,
-    &:focus {
-        opacity: 70%;
-        transition: all 300ms ease;
-    }
 }
 
 .btn--secondary {
@@ -30,10 +49,4 @@
     transition: all 300ms ease;
     transform-origin: left;
     width: 80px;
-
-    &:hover,
-    &:focus {
-        transition: all 300ms ease;
-        opacity: 50%;
-    }
 }

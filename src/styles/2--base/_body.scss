@@ -19,18 +19,15 @@ button {
 
 
 .section-a {
-    background-image: url(../../../assets/brushes.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.3)),
+        url(../../../assets/brushes.jpg);
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    // clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0 90%, 0 0);
+}
 
-    .textContainer h1 {
-        background-color: color(primary);
-        font-weight: 400;
-        font-size: 4rem;
-        padding: 2rem 0.8em;
-        color: white;
-        box-shadow: -25px 25px color(accent);
-    }
+.section.b {
+    background-color: color(bg);
 }

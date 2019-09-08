@@ -4,4 +4,26 @@ $colors: (primary: black,
     primary-light: lighten(#17222a, 5%),
     accent: #3cf28b,
     accent-light: lighten(#3cf28b, 10%),
+    accent-dark: darken(#3cf28b, 20%),
     bg: #F8FCFF);
+
+/* Color Theme Swatches in Hex */
+$AK-Color-Theme-1-hex: #F5FFDE;
+$AK-Color-Theme-2-hex: #E8AD52;
+$AK-Color-Theme-3-hex: #FF135C;
+$AK-Color-Theme-4-hex: #716AE8;
+$AK-Color-Theme-5-hex: #06FFC7;
+
+/* Color Theme Swatches in RGBA */
+$AK-Color-Theme-1-rgba: rgba(244, 255, 221, 1);
+$AK-Color-Theme-2-rgba: rgba(232, 172, 82, 1);
+$AK-Color-Theme-3-rgba: rgba(255, 18, 91, 1);
+$AK-Color-Theme-4-rgba: rgba(112, 105, 232, 1);
+$AK-Color-Theme-5-rgba: rgba(5, 255, 198, 1);
+
+/* Color Theme Swatches in HSLA */
+$AK-Color-Theme-1-hsla: hsla(78, 100, 93, 1);
+$AK-Color-Theme-2-hsla: hsla(36, 76, 61, 1);
+$AK-Color-Theme-3-hsla: hsla(341, 100, 53, 1);
+$AK-Color-Theme-4-hsla: hsla(243, 73, 66, 1);
+$AK-Color-Theme-5-hsla: hsla(166, 100, 51, 1);

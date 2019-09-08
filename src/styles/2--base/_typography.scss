@@ -1,17 +1,26 @@
 /* typography
 *************/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900i&display=swap');
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 li,
 a,
 button {
-    font-size: 0.75rem
+    font-weight: 300;
 }
 
 h1 {
-    color: black;
+    color: white;
+    font-weight: 300;
+    font-size: 6vw;
+    letter-spacing: 0.22em;
+    margin: 0 0 0.6em 0;
+}
+
+strong {
+    font-weight: 500;
 }
