@@ -28,6 +28,85 @@
 
 .section-b {
     width: 100%;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        margin: 4em 0 3em 0;
+        text-align: center;
+        font-weight: 500;
+        font-size: 24px;
+        font-size-adjust: 0.5;
+        letter-spacing: 0.22em;
+
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 0.7;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 2;
+        margin-bottom: 4em;
+        max-width: 650px;
+    }
+
+    &__container {
+        margin: 2em 10%;
+        display: flex;
+        justify-content: space-between;
+
+        &__left {
+            padding: 0 10% 0 0;
+            width: 50%;
+
+            &__tittle {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.2em;
+
+                img {
+                    margin-right: 1em;
+                }
+            }
+        }
+
+        &__right {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            place-content: center;
+        }
+    }
+}
+
+.section-c {
+    &__container {
+        margin: 0 10% 0 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-columns: row;
+        gap: 2em;
+
+
+        &__card {
+            width: 100%;
+            height: 250px;
+
+            &__img {
+                background-image: url(https://picsum.photos/300/300);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
 
 }

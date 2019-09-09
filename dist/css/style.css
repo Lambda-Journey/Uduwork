@@ -192,7 +192,77 @@ template {
 
 .section-b {
   width: 100%;
-  height: 100vh; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .section-b h2 {
+    margin: 4em 0 3em 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    font-size-adjust: 0.5;
+    letter-spacing: 0.22em; }
+  .section-b h3 {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.7; }
+  .section-b p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 4em;
+    max-width: 650px; }
+  .section-b__container {
+    margin: 2em 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .section-b__container__left {
+      padding: 0 10% 0 0;
+      width: 50%; }
+      .section-b__container__left__tittle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 1.2em; }
+        .section-b__container__left__tittle img {
+          margin-right: 1em; }
+    .section-b__container__right {
+      width: 50%;
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      place-content: center; }
+
+.section-c__container {
+  margin: 0 10% 0 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: row;
+  gap: 2em; }
+  .section-c__container__card {
+    width: 100%;
+    height: 250px; }
+    .section-c__container__card__img {
+      background-image: url(https://picsum.photos/300/300);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%; }
 
 /* media queries
 *************/
@@ -273,11 +343,11 @@ strong {
   -ms-flex-align: center;
   align-items: center;
   letter-spacing: 0.22em;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 1.5em 10%;
   height: 8vh; }
   .section-a__header .logo {
-    width: 180px;
+    width: 170px;
     cursor: pointer; }
 
 .burger {
@@ -369,6 +439,37 @@ button {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat; }
+
+.arrow {
+  position: absolute;
+  bottom: 1vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-animation: arrowAnimation 1200ms ease;
+  animation: arrowAnimation 1200ms ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes arrowAnimation {
+  from {
+    -webkit-transform: translateY(-1vh);
+    transform: translateY(-1vh);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
+
+@keyframes arrowAnimation {
+  from {
+    -webkit-transform: translateY(-1vh);
+    transform: translateY(-1vh);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; } }
 
 .section.b {
   background-color: #F8FCFF; }

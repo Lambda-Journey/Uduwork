@@ -28,6 +28,28 @@ button {
     // clip-path: polygon(100% 0%, 100% 90%, 50% 100%, 0 90%, 0 0);
 }
 
+.arrow {
+    position: absolute;
+
+    bottom: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: arrowAnimation 1200ms ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrowAnimation {
+    from {
+        transform: translateY(-1vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .section.b {
     background-color: color(bg);
 }
