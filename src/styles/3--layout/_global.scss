@@ -78,6 +78,7 @@
 
                 img {
                     margin-right: 1em;
+
                 }
             }
         }
@@ -87,6 +88,13 @@
             margin: auto;
             display: flex;
             place-content: center;
+
+            img {
+                transform: translateY(30px);
+                opacity: 0;
+                transition: all 800ms ease;
+                transition-delay: 300ms;
+            }
         }
     }
 }

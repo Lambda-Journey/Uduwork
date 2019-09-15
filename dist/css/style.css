@@ -266,6 +266,14 @@ template {
       display: -ms-flexbox;
       display: flex;
       place-content: center; }
+      .section-b__container__right img {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+        opacity: 0;
+        -webkit-transition: all 800ms ease;
+        transition: all 800ms ease;
+        -webkit-transition-delay: 300ms;
+        transition-delay: 300ms; }
 
 .section-c__container {
   margin: 0 10% 0 10%;
@@ -471,24 +479,32 @@ button {
   animation-iteration-count: infinite; }
 
 @-webkit-keyframes arrowAnimation {
-  from {
+  0% {
     -webkit-transform: translateY(-1vh);
     transform: translateY(-1vh);
     opacity: 0; }
-  to {
+  50% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    opacity: 1; } }
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(-1vh);
+    transform: translateY(-1vh);
+    opacity: 0; } }
 
 @keyframes arrowAnimation {
-  from {
+  0% {
     -webkit-transform: translateY(-1vh);
     transform: translateY(-1vh);
     opacity: 0; }
-  to {
+  50% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    opacity: 1; } }
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(-1vh);
+    transform: translateY(-1vh);
+    opacity: 0; } }
 
 .section.b {
   background-color: #F8FCFF; }

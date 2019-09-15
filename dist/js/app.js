@@ -30,9 +30,8 @@ const scrollAppearTitle = () => {
 window.addEventListener('scroll', scrollAppearTitle);
 
 
-
 const scrollAppearLeftTitle = () => {
-    let lefttitle = document.querySelector('.section-b__container__left');
+    let lefttitle = document.querySelector('#freelancers-text');
     let introPosition = lefttitle.getBoundingClientRect().top;
     let screePosition = window.innerHeight / 1.2;
 
@@ -40,6 +39,8 @@ const scrollAppearLeftTitle = () => {
         lefttitle.classList.add('appear');
     }
 }
+
+window.addEventListener('scroll', scrollAppearLeftTitle);
 
 const scrollAppearTitle2 = () => {
     let title2 = document.querySelector('#usuarios');
@@ -51,13 +52,46 @@ const scrollAppearTitle2 = () => {
     }
 }
 
-window.addEventListener('scroll', scrollAppearLeftTitle);
+window.addEventListener('scroll', scrollAppearTitle2);
+
+const scrollAppearLeftTitle3 = () => {
+    let lefttitle2 = document.querySelector('#usuarios-text');
+    let introPosition = lefttitle2.getBoundingClientRect().top;
+    let screePosition = window.innerHeight / 1.2;
+
+    if (introPosition < screePosition) {
+        lefttitle2.classList.add('appear');
+    }
+}
+
+window.addEventListener('scroll', scrollAppearLeftTitle3);
 
 
 
+const scrollAppearImgTop = () => {
+    let rightImgTop = document.querySelector('#freelancers-img');
+    let introPosition = rightImgTop.getBoundingClientRect().top;
+    let screePosition = window.innerHeight / 1.2;
+
+    if (introPosition < screePosition) {
+        rightImgTop.classList.add('appear');
+    }
+}
+
+window.addEventListener('scroll', scrollAppearImgTop);
 
 
+const scrollAppearImgBottom = () => {
+    let rightImgBottom = document.querySelector('#usuarios-img');
+    let introPosition = rightImgBottom.getBoundingClientRect().top;
+    let screePosition = window.innerHeight / 1.2;
 
+    if (introPosition < screePosition) {
+        rightImgBottom.classList.add('appear');
+    }
+}
+
+window.addEventListener('scroll', scrollAppearImgBottom);
 
 
 
