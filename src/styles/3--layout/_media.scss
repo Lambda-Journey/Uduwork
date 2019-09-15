@@ -49,4 +49,17 @@
             }
         }
     }
+
+    .section-b {
+        &__container {
+            margin: 0 5%;
+        }
+    }
+
+    .section-c {
+        &__container {
+            margin: 0 5%;
+        }
+    }
+
 }
