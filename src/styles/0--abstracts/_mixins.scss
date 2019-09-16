@@ -1,2 +1,9 @@
 /* mixins
 *************/
+
+@mixin initialState($translateDistance, $transitionTime, $transitionDelay) {
+    opacity: 0;
+    transform: translateY($translateDistance);
+    transition: all $transitionTime ease;
+    transition-delay: $transitionDelay;
+}
