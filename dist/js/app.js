@@ -1,3 +1,4 @@
+// burger menu animation plus trigger
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav__links');
@@ -17,97 +18,38 @@ const navSlide = () => {
     });
 }
 
-const scrollAppearTitle = () => {
-    let title = document.querySelector('#freelancers');
-    let introPosition = title.getBoundingClientRect().top;
-    let screePosition = window.innerHeight / 1.2;
+// selects DOM element
+const elementSelect = element => document.querySelector(element);
+// applies .apear to the DOM element
+const scrollAppear = (e) => {
+    let introPosition = elementSelect(e).getBoundingClientRect().top;
+    let screenPosition = window.innerHeight / 1.2;
 
-    if (introPosition < screePosition) {
-        title.classList.add('appear');
+    if (introPosition < screenPosition) {
+        elementSelect(e).classList.add('appear');
     }
 }
-
-window.addEventListener('scroll', scrollAppearTitle);
-
-
-const scrollAppearLeftTitle = () => {
-    let lefttitle = document.querySelector('#freelancers-text');
-    let introPosition = lefttitle.getBoundingClientRect().top;
-    let screePosition = window.innerHeight / 1.2;
-
-    if (introPosition < screePosition) {
-        lefttitle.classList.add('appear');
-    }
-}
-
-window.addEventListener('scroll', scrollAppearLeftTitle);
-
-const scrollAppearTitle2 = () => {
-    let title2 = document.querySelector('#usuarios');
-    let introPosition = title2.getBoundingClientRect().top;
-    let screePosition = window.innerHeight / 1.2;
-
-    if (introPosition < screePosition) {
-        title2.classList.add('appear');
-    }
-}
-
-window.addEventListener('scroll', scrollAppearTitle2);
-
-const scrollAppearLeftTitle3 = () => {
-    let lefttitle2 = document.querySelector('#usuarios-text');
-    let introPosition = lefttitle2.getBoundingClientRect().top;
-    let screePosition = window.innerHeight / 1.2;
-
-    if (introPosition < screePosition) {
-        lefttitle2.classList.add('appear');
-    }
-}
-
-window.addEventListener('scroll', scrollAppearLeftTitle3);
-
-
-
-const scrollAppearImgTop = () => {
-    let rightImgTop = document.querySelector('#freelancers-img');
-    let introPosition = rightImgTop.getBoundingClientRect().top;
-    let screePosition = window.innerHeight / 1.2;
-
-    if (introPosition < screePosition) {
-        rightImgTop.classList.add('appear');
-    }
-}
-
-window.addEventListener('scroll', scrollAppearImgTop);
-
-
-const scrollAppearImgBottom = () => {
-    let rightImgBottom = document.querySelector('#usuarios-img');
-    let introPosition = rightImgBottom.getBoundingClientRect().top;
-    let screePosition = window.innerHeight / 1.2;
-
-    if (introPosition < screePosition) {
-        rightImgBottom.classList.add('appear');
-    }
-}
-
-window.addEventListener('scroll', scrollAppearImgBottom);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const app = () => {
     navSlide(); //burger animation
+    window.addEventListener('scroll', function () {
+        scrollAppear('#freelancers');
+    });
+    window.addEventListener('scroll', function () {
+        scrollAppear('#freelancers-text');
+    });
+    window.addEventListener('scroll', function () {
+        scrollAppear('#freelancers-img');
+    });
+    window.addEventListener('scroll', function () {
+        scrollAppear('#usuarios');
+    });
+    window.addEventListener('scroll', function () {
+        scrollAppear('#usuarios-text');
+    });
+    window.addEventListener('scroll', function () {
+        scrollAppear('#usuarios-img');
+    });
 }
 
 app();
