@@ -50,6 +50,12 @@ const app = () => {
     window.addEventListener('scroll', function () {
         scrollAppear('#usuarios-img');
     });
+    window.addEventListener('scroll', function () {
+        scrollAppear('#servicios');
+    });
+    window.addEventListener('scroll', function () {
+        scrollAppear('#c-container');
+    });
 }
 
 app();
