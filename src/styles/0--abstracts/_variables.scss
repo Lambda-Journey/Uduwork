@@ -1,18 +1,20 @@
 /* variables
 *************/
-$colors: (primary: black,
+$colors: (
+    primary: black,
     primary-light: lighten(#17222a, 5%),
     accent: #3cf28b,
     accent-light: lighten(#3cf28b, 10%),
     accent-dark: darken(#3cf28b, 20%),
-    bg: #F8FCFF);
+    bg: #f8fcff
+);
 
 /* Color Theme Swatches in Hex */
-$AK-Color-Theme-1-hex: #F5FFDE;
-$AK-Color-Theme-2-hex: #E8AD52;
-$AK-Color-Theme-3-hex: #FF135C;
-$AK-Color-Theme-4-hex: #716AE8;
-$AK-Color-Theme-5-hex: #06FFC7;
+$AK-Color-Theme-1-hex: #f5ffde;
+$AK-Color-Theme-2-hex: #e8ad52;
+$AK-Color-Theme-3-hex: #ff135c;
+$AK-Color-Theme-4-hex: #716ae8;
+$AK-Color-Theme-5-hex: #06ffc7;
 
 /* Color Theme Swatches in RGBA */
 $AK-Color-Theme-1-rgba: rgba(244, 255, 221, 1);

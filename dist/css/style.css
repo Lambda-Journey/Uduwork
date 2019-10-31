@@ -467,14 +467,6 @@ strong {
   .nav__links li a:focus {
     color: #3cf28b; }
 
-.nav--active {
-  -webkit-transform: translateX(0%) !important;
-  transform: translateX(0%) !important;
-  -webkit-transition: -webkit-transform 500ms ease;
-  transition: -webkit-transform 500ms ease;
-  transition: transform 500ms ease;
-  transition: transform 500ms ease, -webkit-transform 500ms ease; }
-
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
@@ -515,7 +507,7 @@ strong {
   padding: 0; }
 
 body {
-  background-color: #F8FCFF; }
+  background-color: #f8fcff; }
 
 li,
 a,
@@ -570,7 +562,7 @@ button {
     opacity: 0; } }
 
 .section.b {
-  background-color: #F8FCFF; }
+  background-color: #f8fcff; }
 
 /* sidebar
 *************/
